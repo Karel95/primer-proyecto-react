@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { AddTask } from './Formulario';
 
 const Items = ({ nombre, visto, aprobado }) => {
     return (
@@ -30,6 +31,8 @@ export const Map = () => {
             <ol>
                 {Arreglo.map(item => <Items key={item.nombre} nombre={item.nombre} visto={item.visto} aprobado={item.aprobado}></Items>)}
             </ol>
+            <AddTask></AddTask>
+            <button>Add</button>
         </>
     )
 }
