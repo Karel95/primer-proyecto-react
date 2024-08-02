@@ -1,14 +1,15 @@
 import {useState} from 'react';
 
 
-export const AddTask = () => {
+export const AddTask = ({addTask}) => {
     const [inputValue, setinputValue] = useState('')
     const onInputChange = (event) => {
         setinputValue(event.target.value)
     }
     const onSubmit = (event) => {
         event.preventDefault()
-        console.log(inputValue)
+        addTask(inputValue)
+        setinputValue('')
     }
     return (
         <form onSubmit={onSubmit}>

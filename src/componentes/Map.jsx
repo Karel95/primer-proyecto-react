@@ -13,25 +13,36 @@ const Items = ({ nombre, visto, aprobado }) => {
 
 export const Map = () => {
     let Secciones = [
-        {nombre: 'Instalación', visto: true, aprobado: true},
-        {nombre: 'Vite', visto: true, aprobado: true},
-        {nombre: 'Componentes', visto: true, aprobado: true},
-        {nombre: 'Variables', visto: true, aprobado: true},
-        {nombre: 'Props', visto: true, aprobado: true},
-        {nombre: 'Eventos', visto: true, aprobado: true},
-        {nombre: 'useState', visto: true, aprobado: true},
-        {nombre: 'Condicionales', visto: true, aprobado: true},
-        {nombre: 'Redux', visto: false, aprobado: true},
-        {nombre: 'customHooks', visto: false, aprobado: false},
+        {id: 0, nombre: 'Instalación', visto: true, aprobado: true},
+        {id: 1, nombre: 'Vite', visto: true, aprobado: true},
+        {id: 2, nombre: 'Componentes', visto: true, aprobado: true},
+        {id: 3, nombre: 'Variables', visto: true, aprobado: true},
+        {id: 4, nombre: 'Props', visto: true, aprobado: true},
+        {id: 5, nombre: 'Eventos', visto: true, aprobado: true},
+        {id: 6, nombre: 'useState', visto: true, aprobado: true},
+        {id: 7, nombre: 'Condicionales', visto: true, aprobado: true},
+        {id: 8, nombre: 'Redux', visto: false, aprobado: true},
+        {id: 9, nombre: 'customHooks', visto: false, aprobado: false},
     ]
-    const [Arreglo, setArreglo] = useState(Secciones)
+    const [arreglo, setArreglo] = useState(Secciones)
+    const onAddTask = (val) => {
+        let valor = val.trim()
+        if (valor < 1) return
+        const envio = {
+            id: arreglo.length,
+            nombre: val,
+            visto: false,
+            aprobado: false
+        }
+        setArreglo([...arreglo, envio])
+    }
     return (
         <>
             <h1>Contenido:</h1>
             <ol>
-                {Arreglo.map(item => <Items key={item.nombre} nombre={item.nombre} visto={item.visto} aprobado={item.aprobado}></Items>)}
+                {arreglo.map(item => <Items key={item.id} nombre={item.nombre} visto={item.visto} aprobado={item.aprobado}></Items>)}
             </ol>
-            <AddTask></AddTask>
+            <AddTask addTask={onAddTask}></AddTask>
             <button>Add</button>
         </>
     )
