@@ -13,14 +13,15 @@ import './styles.css'
 // import {Eventos} from './componentes/Eventos.jsx'
 // import {Condicionales} from './componentes/Condicionales.jsx'
 // import {Map} from './componentes/Map.jsx'
-import {UserApp} from './componentes/UseEffectAndFetch2.jsx'
+// import {UserApp} from './componentes/UseEffectAndFetch1.jsx'
+import {Hooks} from './componentes/Hooks.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UserApp />
+    <Hooks />
   </React.StrictMode>,
 )
 
 
-//SergieCode_(14)-2:40:00
+//SergieCode_(14)-3:07:00
