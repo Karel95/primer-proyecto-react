@@ -14,12 +14,14 @@ import './styles.css'
 // import {Condicionales} from './componentes/Condicionales.jsx'
 // import {Map} from './componentes/Map.jsx'
 // import {UserApp} from './componentes/UseEffectAndFetch1.jsx'
-import {Hooks} from './componentes/Hooks.jsx'
+// import {Hooks} from './componentes/Hooks.jsx'
+// import {AddTask} from './componentes/Formulario.jsx'
+import {FormularioComponente} from './componentes/FormularioComponente.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Hooks />
+    <FormularioComponente />
   </React.StrictMode>,
 )
 
