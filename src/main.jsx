@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
-// import './index.css'
+import './index.css'
 
 //Curso de React:
-import './styles.css'
+// import './styles.css'
 // import PrimerComponenteFunction from './componentes/PrimerComponenteFunction.jsx'
 // import PrimerComponenteClass from './componentes/PrimerComponenteClass.jsx'
 // import { PrimerComponenteReactArrowFunction } from './componentes/PrimerComponenteReactArrowFunction.jsx'
@@ -17,14 +17,15 @@ import './styles.css'
 // import {Hooks} from './componentes/Hooks.jsx'
 // import {AddTask} from './componentes/Formulario.jsx'
 // import {FormularioComponente} from './componentes/FormularioComponente.jsx'
-import {FetchHook} from './componentes/FetchHook.jsx'
+// import {FetchHook} from './componentes/FetchHook.jsx'
+import {Test} from './componentes/Test.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FetchHook />
+    <Test />
   </React.StrictMode>,
 )
 
 
-//SergieCode_(24)-3:52:00
+//SergieCode_(24)-3:59:00
