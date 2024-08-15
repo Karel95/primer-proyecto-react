@@ -11,21 +11,18 @@ import './index.css'
 // import {Variables} from './componentes/Variables.jsx'
 // import {Props} from './componentes/Props.jsx'
 // import {Eventos} from './componentes/Eventos.jsx'
-// import {Condicionales} from './componentes/Condicionales.jsx'
+import {Condicionales} from './componentes/Condicionales.jsx'
 // import {Map} from './componentes/Map.jsx'
-// import {UserApp} from './componentes/UseEffectAndFetch1.jsx'
 // import {Hooks} from './componentes/Hooks.jsx'
 // import {AddTask} from './componentes/Formulario.jsx'
-// import {FormularioComponente} from './componentes/FormularioComponente.jsx'
-// import {FetchHook} from './componentes/FetchHook.jsx'
-import {Test} from './componentes/Test.jsx'
+// import {Test} from './componentes/Test.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Test />
+    <Condicionales />
   </React.StrictMode>,
 )
 
 
-//SergieCode_(24)-3:59:00
+//SergieCode_(24)-2:43:00

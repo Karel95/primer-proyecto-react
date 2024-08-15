@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Items = ({nombre, visto, aprobado}) => {
     return(
         <li>
@@ -29,4 +31,5 @@ export const Condicionales = () => {
     )
   }
 
-  
+//emojis: press "win" + "."
+//(botones "window" y "punto")
