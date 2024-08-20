@@ -1,4 +1,5 @@
-import react, { useState } from "react"
+import React from 'react';
+import { useState } from "react"
 
 export const info = () => {
     const [state, setState] = useState({
@@ -11,4 +12,3 @@ export const info = () => {
         pass
     }
 }
-
