@@ -1,3 +1,5 @@
+import { Component } from "react";
+
 class PrimerComponenteClass extends Component {
     state = {  } 
     render() { 
